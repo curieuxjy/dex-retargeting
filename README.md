@@ -37,6 +37,12 @@
 ## Installation
 
 ```shell
+conda create -n dex-retargeting python=3.10
+conda activate dex-retargeting
+pip install torch torchvision torchaudio
+```
+
+```shell
 pip install dex_retargeting
 ```
 
@@ -47,6 +53,8 @@ git clone https://github.com/dexsuite/dex-retargeting
 cd dex-retargeting
 pip install -e ".[example]"
 ```
+
+
 
 ## Changelog
 
@@ -63,14 +71,14 @@ pip install -e ".[example]"
 
 ## Examples
 
-### Retargeting from human hand video
+### 1. Retargeting from human hand video
 
 This type of retargeting can be used for applications like teleoperation,
 e.g. [AnyTeleop](https://yzqin.github.io/anyteleop/).
 
 [Tutorial on retargeting from human hand video](example/vector_retargeting/README.md)
 
-### Retarget from hand object pose dataset
+### 2. Retarget from hand object pose dataset
 
 ![teaser](example/position_retargeting/hand_object.webp)
 
